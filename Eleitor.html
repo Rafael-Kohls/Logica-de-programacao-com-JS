@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Eleitor
+	</title>
+
+	<style type="text/css">
+		body{
+			text-align: center;
+			font-family: sans-serif;
+			background-color: darkcyan;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	window.alert(`Vamos verificar se você pode, não pode ou deve votar.`);
+
+	var nome = window.prompt(`Digite seu nome:`);
+	var idad = Number(window.prompt(`${nome}, Digite sua idade.`));
+
+	document.write(`<h1>Tabela Eleitoral.</h1><br><br>`);
+	document.write(`-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------`)
+	document.write(`<h2>16 - 17</h2>`);
+	document.write(`<h3><b>Facultativo</h3></b><br>`);
+	document.write(`<h2>18 - 70</h2>`);
+	document.write(`<h3><b>Obrigatório</h3></b><br>`);
+	document.write(`<h2>70 - ...</h2>`);
+	document.write(`<h3><b>Não obrigatório</h3></b><br>`);
+	document.write(`-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------`)
+	
+
+	if (idad == 16 || idad == 17) {
+
+	document.write(`<h3>${nome}, sua idade é ${idad}, você está em idade eleitoral. Seu voto não é obrigatório mas com ele você faz a diferença.<h3>`);
+
+		} else if (idad > 17 && idad < 71) {
+
+		document.write(`<h3>${nome}, sua idade é ${idad}, seu voto é obrigatório.</h3>`);
+
+				} else if (idad < 105 && idad > 70) {
+
+				document.write(`<h3>${nome}, sua idade é ${idad}, seu voto não é obrigatório.</h3>`);
+
+					} else if (idad > 105) {
+
+					document.write(`<h3>Bah, sua idade é ${idad} anos mesmo?</h3>`);
+
+						} else if (idad > 4 && idad	< 16) {
+
+						document.write(`<h3>${nome}, sua idade é ${idad}, você não precisa votar.</h3>`);
+
+							} else {
+
+							document.write(`<h3>Insira um valor válido</h3>`)
+
+							}
+
+
+	</script>
+
+</body>
+</html>

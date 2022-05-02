@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		2° Projeto Avaliativo
+	</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			background-color: #4169E1;
+			font-family: sans-serif;
+		}
+		div{
+			font-size: 25px;
+			background-color: LightBlue;
+			border-radius: 40px;
+			box-shadow: 0px 13px 20px #000000ad;
+			margin: 20px 20px 20px 20px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<script type="text/javascript">
+		window.alert(`Consulte os produtos na promoção da semana do setor a padaria no mercado Preço bom LTDA\n\nPromoção válida nas seguintes Filiais:\n\nCampo Novo\nCamaquã\nTristeza`);
+		window.alert(`Para consulta aos produtos:\n\nDigite o produto ou o código correspondente`);
+		var p1 = window.prompt(`Digite o produto ou o código correspondente para consulta\n\n🍞 01 - PÃO\n🧀 02 - QUEIJO\n🥩 03 - PRESUNTO\n🎂 04 - BOLO\n🥛 05 - LEITE\n🧁 06 - BRIGADEIRO\n🥓 07 - SALGADINHO`).toUpperCase()
+		var f1 = window.prompt(`Digite as letras correspondente a Filial que deseja consultar:\n\n CN = Campo Novo\n\nCQ = Camaquã\n\nTZ = Tristeza`).toUpperCase()
+		switch (p1) {
+			case "01":
+			case "1":
+			case "PÃO":
+			case "PAO":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🍞 Pão<br><br>`);
+			document.write(`Preço do produto na promoção R$ 3,56kg<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🍞 Pão<br><br>`);
+				document.write(`Preço do produto na promoção R$ 3,56kg<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+				
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🍞 Pão<br><br>`);
+					document.write(`Preço do produto na promoção R$ 3,56kg<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+					
+	
+						} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+						}
+
+			case "2":
+			case "02":
+			case "QUEIJO":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🧀 Queijo<br><br>`);
+			document.write(`Preço do produto na promoção R$ 2,44 cada 100g<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+			
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🧀 Queijo<br><br>`);
+				document.write(`Preço do produto na promoção R$ 2,44 cada 100g<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+				
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🧀 Queijo<br><br>`);
+					document.write(`Preço do produto na promoção R$ 2,44 cada 100g<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+					
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+						}
+
+			case "3":
+			case "03":
+			case "PRESUNTO":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🥩 Presunto<br><br>`);
+			document.write(`Preço do produto na promoção R$ 1,90 cada 100g<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🥩 Presunto<br><br>`);
+				document.write(`Preço do produto na promoção R$ 1,90 cada 100g<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🥩 Presunto<br><br>`);
+					document.write(`Preço do produto na promoção R$ 1,90 cada 100g<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+							}
+
+			case "4":
+			case "04":
+			case "BOLO":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🎂 Bolo<br><br>`);
+			document.write(`Preço do produto na promoção R$ 6,32 a unidade<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🎂 Bolo<br><br>`);
+				document.write(`Preço do produto na promoção R$ 6,32 a unidade<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🎂 Bolo<br><br>`);
+					document.write(`Preço do produto na promoção R$ 6,32 a unidade<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+							}
+
+			case "5":
+			case "05":
+			case "LEITE":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🥛 Leite<br><br>`);
+			document.write(`Preço do produto na promoção R$ 4,11 o litro<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🥛 Leite<br><br>`);
+				document.write(`Preço do produto na promoção R$ 4,11 o litro<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🥛 Leite<br><br>`);
+					document.write(`Preço do produto na promoção R$ 4,11 o litro<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+							}
+
+			case "6":
+			case "06":
+			case "Brigadeiro":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🧁 Brigadeiro<br><br>`);
+			document.write(`Preço do produto na promoção R$ 2,50 a unidade<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🧁 Brigadeiro<br><br>`);
+				document.write(`Preço do produto na promoção R$ 2,50 a unidade<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🧁 Brigadeiro<br><br>`);
+					document.write(`Preço do produto na promoção R$ 2,50 a unidade<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+							}
+
+			case "7":
+			case "07":
+			case "Salgadinho":
+
+			if (f1 == "CQ" || f1 == "CAMAQUÃ" || f1 == "CAMAQUA") {
+			document.write(`Produto pesquisado:<br><br>`);
+			document.write(`🥓 Salgadinho<br><br>`);
+			document.write(`Preço do produto na promoção R$ 23,27 o kg<br><br>`);
+			document.write(`Filial Camaquã<br><br>`);
+			document.write(`Endereço<br>`);
+			document.write(`Rua das Rosas, 47<br>`);
+			document.write(`Bairro Camaquã<br>`);
+			document.write(`Porto Alegre/RS<br>`);
+			document.write(`Telefone: (51) 54545454`);
+			break;
+
+				} else if (f1 == "CN" || f1 == "CAMPO NOVO") {
+				document.write(`Produto pesquisado:<br><br>`);
+				document.write(`🥓 Salgadinho<br><br>`);
+				document.write(`Preço do produto na promoção R$ 23,27 o kg<br><br>`);
+				document.write(`Filial Campo Novo<br><br>`);
+				document.write(`Endereço<br>`);
+				document.write(`Rua Alegria, 47<br>`);
+				document.write(`Bairro Campo Novo<br>`);
+				document.write(`Porto Alegre/RS<br>`);
+				document.write(`Telefone: (51) 53535353`);
+				break;
+
+					} else if (f1 == "TZ" || f1 == "TRISTEZA") {
+					document.write(`Produto pesquisado:<br><br>`);
+					document.write(`🥓 Salgadinho<br><br>`);
+					document.write(`Preço do produto na promoção R$ 23,27 o kg<br><br>`);
+					document.write(`Filial Tristeza<br><br>`);
+					document.write(`Endereço<br>`);
+					document.write(`Rua Felicidade 47<br>`);
+					document.write(`Bairro Tristeza<br>`);
+					document.write(`Porto Alegre/RS<br>`);
+					document.write(`Telefone: (51) 52525252`);
+					break;
+	
+					} else {
+						document.write(`<h2>⚠️ Filial Inválida! ⚠️</h2><br><br>`);
+						document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+						document.write(`CN = Campo Novo<br>`);
+						document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+						document.write(`CQ = Camaquã<br>`);
+						document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+						document.write(`TZ = Tristeza<br>`);
+						document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+						break;
+
+							}
+				default:
+				document.write(`<h2>⚠️ Produto pesquisado ${p1} não consta na promoção ⚠️</h2><br><br>`);
+				document.write(`Produtos em promoção nas nossas filias:<br><br>`);
+				document.write(`🍞 01 - Pão <br>`);
+				document.write(`🧀 02 - Queijo <br>`);
+				document.write(`🥩 03 - Presunto <br>`);
+				document.write(`🎂 04 - Bolo <br>`);
+				document.write(`🥛 05 - Leite <br>`);
+				document.write(`🧁 06 - Brigadeiro <br>`);
+				document.write(`🥓 07 - Salgadinho <br><br>`);
+				document.write(`Nossas filiais Mais próximas de você: <br><br>`);
+				document.write(`CN = Campo Novo<br>`);
+				document.write(`Rua Alegria, 546 / Bairro Campo Novo - POA/RS / Tel. (51) 53535353<br><br>`)
+				document.write(`CQ = Camaquã<br>`);
+				document.write(`Rua das Rosas, 47 / Bairro Camaquã - POA/RS / Tel. (51) 54545454<br><br>`)
+				document.write(`TZ = Tristeza<br>`);
+				document.write(`Rua Felicidade / Bairro Tristeza - POA/RS / Tel. (51) 52525252<br><br>`);
+				break;
+		}
+	</script>
+</div>
+
+</body>
+</html>

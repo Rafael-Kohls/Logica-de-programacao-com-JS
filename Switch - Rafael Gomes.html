@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Estados
+	</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			text-align: center;
+			background-color: darkcyan;
+		}
+
+	</style>
+</head>
+<body>
+<script>
+	window.alert(`Digite a sigla do estado desejado para identificarmos sua região: \n\n Sul \n\n Sudeste \n\n Nordeste \n\n Norte \n\n Centro-Oeste`);
+	var estados = window.prompt(`Digite Estado desejado: `);
+
+	switch (estados) {
+		case "RS":
+		case "PR":
+		case "SC":
+
+		document.write(`<h1>O ${estados} é um estado da região Sul.</h1>`);
+		break
+
+		case "MG":
+		case "SP":
+		case "RJ":
+		case "ES":
+
+		document.write(`<h1>O ${estados} é um estado da região Sudeste.</h1>`);
+		break
+
+		case "BA":
+		case "CE":
+		case "MA":
+		case "PI":
+		case "RN":
+		case "PB":
+		case "PE":
+		case "AL":
+
+		document.write(`<h1>O ${estados} é um estado da região Nordeste.</h1>`);
+		break
+
+		case "RR":
+		case "AP":
+		case "AM":
+		case "AC":
+		case "RO":
+		case "PA":
+		case "TO":
+
+		document.write(`<h1>O ${estados} é um estado da região Norte.</h1>`);
+		break
+
+		case "MT":
+		case "MS":
+		case "GO":
+
+		document.write(`<h1>O ${estados} é um estado da região Centro-Oeste.</h1>`);
+		break
+
+
+		default:
+		document.write(`<h1>O ${estados} é um estado invalido.</h1>`)
+
+	}
+
+</script>
+
+
+</body>
+</html>

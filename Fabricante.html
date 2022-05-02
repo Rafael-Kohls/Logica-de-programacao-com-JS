@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Modelos e Fabricantes
+	</title>
+
+	<style type="text/css">
+		body{
+			text-align: center;
+			font-family: sans-serif;
+			background-color: darkcyan;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		window.alert(`CONSULTA A MODELOS E FABRICANTES DE VEÍCULOS`);
+		window.alert(`FABRICANTES A CONSULTAR:\n\nToyota\n\nFord\n\nHonda`);
+		window.alert(`MODELOS A CONSULTAR:\n\nfit\nfusion\nhilux\ncorolla\ncivic\nranger`);
+
+	var n1 = window.prompt(`ESCOLHA QUAL FABRICANTE DESEJA CONSULTAR:\n\n(Digite o fabricante ou n° correspondente)\n\n1 - TOYOTA\n\n2 - FORD\n\n3 - HONDA`).toUpperCase();
+	var n2 = window.prompt(`Digite o modelo para pesquisa:\n\nfit\nfusion\nhilux\ncorolla\ncivic\nranger`).toUpperCase();
+
+	switch (n1) {
+		case "1":
+		case "TOYOTA":
+
+			if(n2 == "HILUX") {
+
+			document.write(`<h1>Você escolheu a fabricante Toyota.</h1><br><br>`);
+			document.write(`<h1>O modelo ${n2} é da Fabricante TOYOTA</h1>`)
+			break;
+
+				} else if (n2 == "COROLLA") {
+
+				document.write(`<h1>Você escolheu a fabricante Toyota.</h1><br><br>`);
+				document.write(`<h1>O modelo ${n2} é da Fabricante TOYOTA.</h1>`)
+				break;
+
+					} else {
+
+					document.write(`<h1>Você escolheu a fabricante Toyota.</h1><br><br>`);
+					document.write(`<h1>O ${n2} não é da TOYOTA.</h1>`);
+					break;
+
+					}
+
+		case "2":
+		case "FORD":
+
+			if(n2 == "FUSION"){
+
+			document.write(`<h1>Você escolheu a fabricante Ford.</h1><br><br>`);
+			document.write(`<h1>O modelo ${n2} é da Fabricante Ford.</h1>`)
+			break;
+
+				} else if (n2 == "RANGER") {
+
+			document.write(`<h1>Você escolheu a fabricante Ford.</h1><br><br>`);
+			document.write(`<h1>O modelo ${n2} é da Fabricante Ford.</h1>`)
+				break;
+
+					} else{
+					document.write(`<h1>Você escolheu a fabricante Ford.</h1><br><br>`);
+					document.write(`<h1>O modelo ${n2} não é da FORD.</h1>`);
+					break;
+
+					}
+
+		case "3":
+		case "HONDA":
+
+			if(n2 == "FIT"){
+
+			document.write(`<h1>Você escolheu a fabricante Honda.</h1><br><br>`);
+			document.write(`<h1>O modelo ${n2} é da Fabricante Honda.</h1>`)
+			break;
+
+				} else if (n2 == "CIVIC") {
+
+			document.write(`<h1>Você escolheu a fabricante Honda.</h1><br><br>`);
+			document.write(`<h1>O modelo ${n2} é da Fabricante Honda.</h1>`)
+				break;
+
+					} else {
+					document.write(`<h1>Você escolheu a fabricante Honda.</h1><br><br>`);
+					document.write(`<h1>O modelo ${n2} não é da Honda.</h1>`);
+					break;
+
+					}
+
+			default:	
+				document.write(`<h1>Insira opções válidas.</h1>`)
+			
+	}
+
+	</script>
+
+</body>
+</html>

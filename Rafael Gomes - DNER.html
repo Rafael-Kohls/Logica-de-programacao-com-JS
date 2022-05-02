@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		D.N.E.R
+	</title>
+	<style>
+		body{
+			text-align: center;
+			background-color: darkcyan;
+			font-family: sans-serif;
+		}
+
+	</style>
+
+</head>
+<body>
+	<script>
+		//alerta inicial
+		window.alert(`Relatório de viagem D.N.E.R.`);
+
+		//variaveis
+		var usuario = window.prompt(`Funcionário responsável: `);
+		var empresa = window.prompt(`Empresa responsável pela viagem: `);
+		var cpf = window.prompt(`${usuario}, informe seu CPF: `);
+		var data = window.prompt(`Data da viagem (/DD/MM/AAAA): `);
+		var motorista = window.prompt(`Motorista responsável pela viagem: `);
+		var trajeto = window.prompt(`Qual o trajeto da viagem: `);
+		var viagem = window.prompt(`Informe o número da viagem: `);
+		var veloMax = Number(window.prompt(`Qual foi a velocidade máxima atingida pelo motorista na data de ${data} (km/h): `));
+		var veloPer = Number(window.prompt(`Qual é a velocidade máxima permitida no trajeto (km/h): `));
+
+		//Apresentação na tela
+		document.write(`<h1>Relatório de viagem do dia ${data}</h1><br>`);
+		document.write(`======================================================================================================================<br>`);
+		document.write(`<h3>Funcionário responsável pelo relatório: ${usuario}</h3>`);
+		document.write(`======================================================================================================================<br>`);
+		document.write(`<h3>CPF do Funcionário: ${cpf}</h3>`);
+		document.write(`======================================================================================================================<br>`);
+		document.write(`<h3>Empresa responsável pela viagem: ${empresa}</h3>`);
+		document.write(`======================================================================================================================<br>`);
+		document.write(`<h3>Motorista responsável pela viagem: ${motorista}</h3>`);
+		document.write(`======================================================================================================================<br>`);
+		document.write(`<h3>Número da viagem: ${viagem}</h3>`);
+		document.write(`======================================================================================================================<br>`);
+		if (veloMax > veloPer) {
+			document.write(`<h2>A velocidade máxima permitida no trajeto é de ${veloPer}km/h.</h2><br>`)
+			document.write(`<h2>O motorista ${motorista} ultrapassou a velocidade em ${veloMax - veloPer}km/h, estando a uma velocidade de ${veloMax}km/h. Uma multa sera aplicada a ${empresa}.</h2><br>`);
+		document.write(`======================================================================================================================<br>`);
+		} 
+
+		else {
+			document.write(`<h2>Não houve problemas na viagem ${viagem}.</h2><br>`)
+			document.write(`======================================================================================================================<br>`);
+
+		}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

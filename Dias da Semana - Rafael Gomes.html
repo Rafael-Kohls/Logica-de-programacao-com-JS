@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Dias da semana
+	</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			text-align: center;
+			background-color: darkcyan;
+		}
+
+	</style>
+</head>
+<body>
+<script>
+	window.alert(`Dias da semana:\n\n1 = Domingo\n 2 = Segunda\n  3 = Terça\n   4 = Quarta\n     5 = Quinta\n      6 = Sexta\n       7 = Sábado`);
+	var Dia = window.prompt(`Digite o código do dia: `);
+
+	switch (Dia) {
+
+		case "1":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Domingo.</h1>`);
+		break;
+
+		case "2":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Segunda.</h1>`);
+		break;
+	
+		case "3":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Terça.</h1>`);
+		break;
+	
+		case "4":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Quarta.</h1>`);
+		break;
+	
+		case "5":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Quinta.</h1>`);
+		break;
+
+		case "6":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Sexta.</h1>`);
+		break;
+	
+		case "7":
+		document.write(`<h1>Você selecionou o número ${Dia}, código para Sábado.</h1>`);
+		break;
+
+		default:
+		document.write(`<h1>É uma opção inválida. Insira um número de 1 a 7.</h1>`)
+	
+
+
+	}
+
+</script>
+
+
+</body>
+</html>

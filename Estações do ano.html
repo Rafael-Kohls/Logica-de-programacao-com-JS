@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Estações
+	</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			text-align: center;
+			background-color: darkcyan;
+		}
+
+	</style>
+</head>
+<body>
+<script>
+	window.alert(`Estações do ano:\n\n1 = Outono\n2 = Inverno\n3 = Primavera\n4 = Verão\n`);
+	var mes = window.prompt(`Digite Um mês do ano: `).toLowerCase()
+
+	switch (mes) {
+
+		case "janeiro":
+		case "fevereiro":
+		case "março":
+		document.write(`<h1>Você selecionou o mês ${mes}. A estação de ${mes} é Outono.</h1>`);
+		break;
+
+		case "Abril":
+		case "maio":
+		case "junho":
+		document.write(`<h1>Você selecionou o mês ${mes}. A estação de ${mes} é Inverno</h1>`);
+		break;
+
+		case "julho":
+		case "agosto":
+		case "setembro":
+		document.write(`<h1>Você selecionou o mês ${mes}. A estação de ${mes} é Primavera</h1>`);
+		break;
+
+		case "outubro":
+		case "novembro":
+		case "dezembro":
+		document.write(`<h1>Você selecionou o mês ${mes}. A estação de ${mes} é Verão</h1>`);
+		break;
+
+		default:
+		document.write(`<h1>Não é um mês válido.`);
+
+
+	}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Bom dia/Tarde/Noite
+	</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			text-align: center;
+			background-color: darkcyan;
+		}
+
+	</style>
+</head>
+<body>
+<script>
+
+	var nome = window.prompt(`Digite seu nome:`)
+	var hora = Number(window.prompt(`Digite o horario atual: `));
+	
+
+	if (hora < 0 ) {
+
+		document.write(`<h1>Olá ${nome}, você escolheu o número ${hora} e este é um Horario invalido.</h1>`);
+	
+		} else if (hora <= 5) {
+
+			document.write(`<h1>Olá ${nome}, São ${hora}h, portanto ainda é madrugada!</h1>`);
+
+			} else if (hora <= 12) {
+
+				document.write(`<h1>Olá ${nome}, São ${hora}h, portanto Bom Dia!</h1>`);
+				
+				} else if (hora <= 18){
+
+					document.write(`<h1>Olá ${nome}, São ${hora}h, portanto Boa tarde!</h1>`);
+
+					} else if (hora <= 23){
+
+						document.write(`<h1>Olá ${nome}, São ${hora}h, portanto Boa noite!</h1>`);	
+
+						} else {
+
+							document.write(`<h1>Olá ${nome}, você escolheu o número ${hora} e este é um Horario invalido.</h1>`);
+
+							}
+
+
+
+</script>
+
+
+</body>
+</html>

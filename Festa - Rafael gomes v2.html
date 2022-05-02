@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media
+	</title>
+	<style type="text/css">
+		body{
+			background-color: #48D1CC;
+			font-family: sans-serif;
+			text-align: center;
+
+		}
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+	var nome = window.prompt(`Qaul seu nome?: `);
+	var idade = window.prompt(`Qual a sua idade?: `)
+	var festa = window.prompt(`Qual feste deseja ir?: `)
+	var ternario = idade >= 18 ? `Presença confirmada na festa ${festa}!` : `${nome}, informamos que você é menor de idade e não esta autorizado na festa ${festa}.`;
+
+	document.write(`---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br>`);
+	document.write(`<h2>Relação de presença para festa ${festa}.<br></h2>`);
+	document.write(`<h3>Seu nome: ${nome}<br>`);
+	document.write(`Sua idade: ${idade}</h3><br><br>`);
+	document.write(`---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br>`);
+	document.write(`<h2> ${ternario}</h2><br>`);
+
+	document.write(`---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br>`);
+
+	</script>
+
+</body>
+</html>
